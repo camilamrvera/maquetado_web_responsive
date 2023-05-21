@@ -1,0 +1,557 @@
+/* Estilos Mobile*/ 
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: lightpink ;
+    height: 4em;
+    line-height: 4em;
+    margin: auto;
+}
+
+#logo {
+    background: url('imagenes/logo_mobile.svg') no-repeat center;
+    max-width: 112px;
+    font-size: 0;
+    margin: auto;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#hamburguesa li {
+    list-style: none;
+    text-indent: -100px;
+    overflow: hidden;
+    margin-top: .75em;
+    width: 2.5em;
+}
+
+#hamburguesa li a {
+    background: url("imagenes/menu.svg") no-repeat center center;
+    background-size: cover;
+    display: block;
+    height: 2.5em;
+}
+
+#hamburguesa li:last-child {
+    display: none;
+}
+
+nav:target #barra {
+    left: 0;
+}
+
+nav:target #hamburguesa li:first-child {
+    display: none;
+}
+
+nav:target #hamburguesa li:last-child {
+    display: block;
+}
+
+#barra {
+    width: 100%;
+    height: calc(100vh - 4em);
+    position: absolute;
+    top: 4em;
+    left: -100%;
+    background: lightpink;
+    transition: left .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 90%;
+    display: inline-block;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    background: darkslateblue;
+    color: lavenderblush;
+    text-align: center;
+    line-height: 3em;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#banner{
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    width: 100%;
+    text-align: center;
+}
+
+
+div figure {
+    width: 90vw;
+    height: calc(90vw * 315 / 560);
+    max-width: 560px;
+    max-height: 315px;
+    margin: auto;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+article {    
+    padding: 2em 1em;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    padding: .5em 0 1em;
+    color: darkslateblue;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+article p {
+    margin: 1em .5em;
+    color: darkslateblue;
+    line-height: 1.75em;
+    font-size: 1em;
+}
+
+article img{
+    border-radius: 6px;
+    width: 95%;
+}
+
+#uno span {
+    font-weight: 600;
+    color: palevioletred;
+}
+
+#uno {
+    background-color: lavenderblush;
+}
+
+#dos{
+    background-color: lightpink;
+    padding: 0 1em;
+
+}
+
+#dos h2 {
+    text-align: center;
+    padding: 1.5em 0 .5em;
+    margin: 0;
+}
+
+#dos span{
+    font-weight: 600;
+}
+
+#serenidad{
+    padding: 2em 0 1em;
+}
+
+#union{
+    padding: 2em 0;
+}
+
+#gratitud{
+    padding: 1em 0 2em;
+}
+
+.fotorama{
+    border-radius: 6px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.fotorama img{
+    margin: auto;
+}
+
+#instalaciones{
+    background-color: lavenderblush;
+}
+
+#tres{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lavenderblush;
+    padding: 0 0 1em;
+} 
+
+#tres figure{
+    width: 50%;
+}
+
+.podcast{
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    padding: .5em 1.5em;
+    align-items: center;
+}
+
+.podcast img{
+    border-radius: 3px;
+}
+
+.podcast h3{
+    font-size: 1em;
+    padding: .5em 0 .2em;
+    color: darkslateblue;
+}
+
+
+#titulo_podcast{
+    padding: 1em 2em;
+    text-align: center;
+    margin: 0;
+    background-color: lavenderblush;
+}
+
+#titulo_valores{
+    padding: 2em 2em .75em;
+    text-align: center;
+    background-color: lightpink;
+}
+
+footer {    
+    width: 100%;
+    background: #BBA7F2;
+    text-align: center;
+    padding: 1em 1em;
+    flex-direction: column;
+    display: flex;
+}
+
+footer p{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: darkslateblue;
+}
+
+#ig{
+    background: url("imagenes/ig.svg");
+}
+
+#tw{
+    background: url("imagenes/tw.svg");
+}
+
+#fb{
+    background: url("imagenes/fb.svg");
+}
+
+footer ul li {
+    list-style: none;
+    padding: 1em;
+}
+
+footer ul li a {
+    height: 36px;
+    width: 36px;
+    font-size: 0;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+.oculto{
+    display: none;
+}
+
+article a{
+    color:purple;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1em;
+}
+
+article:target .oculto {
+    display: block;
+}
+
+article:target .mas {
+    display: none;
+}
+
+
+
+/* Estilos Tablet*/ 
+
+@media screen and (min-width: 577px) {
+
+    h2{
+        font-size: 2.5em;
+        padding: 1.5em 1em;
+    }
+
+    article p{
+        font-size: 1.5em;
+    }
+
+    .podcast h3{
+        font-size: 1.5em;
+    }
+
+    #dos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    #serenidad, #union{
+        width: 50%;
+    }
+
+    #gratitud{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #gratitud figure{
+        width: 100%;
+    }
+
+    #tres figure{
+        width: 33.3%;
+    }
+
+    div figure {
+        width: 85vw;
+        height: calc(85vw * 447 / 670);
+        max-width: 670px;
+        max-height: 447px;
+        margin: auto;
+    }
+    
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .fotorama{
+        border-radius: 6px;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fotorama img{
+        margin: auto;
+    }
+
+    footer p{
+        font-size: 1.5em;
+    }
+
+    footer ul li {
+        list-style: none;
+        padding: 1.5em;
+    }
+    
+    footer ul li a {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+/* Estilos Pc*/ 
+
+@media screen and (min-width: 992px) {
+
+    h2{
+        font-size: 3em;
+    }
+
+    #logo {
+        display: inline-block; 
+        vertical-align: middle;
+        width: 112px;
+        margin-left: 0.5rem;
+    }
+
+    #hamburguesa {
+        display: none;
+    }
+
+    #menu {
+        position: static;
+    }
+
+    header {
+        height: 5em;
+        width: 100%;
+        max-width: 1300px;
+        margin: auto;   
+        display: flex;
+        align-items: center;
+    }
+
+    #barra {
+        position: static;
+        height: auto;
+        background: none;
+        text-align: right;
+        display: inline-block;
+    }
+
+    #barra li {
+        width: 150px;
+        height: 2em;
+        margin: 0 .5em;
+        text-align: center;
+    }
+
+    #uno{
+        padding-bottom: 5em;
+    }
+
+    figure picture{
+        display: flex;
+        justify-content: center;
+    }
+
+    #tres, #dos {
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .pc article { 
+        max-width: 1300px;
+    }
+
+    .pc{
+        display: flex;
+        justify-content: center;
+    }
+
+    #titulo_valores, #titulo_podcast{
+        width: 1300px;
+    }
+
+    #dos{
+        flex-direction: column;
+        padding: 5em 0;
+    }
+
+    #serenidad, #gratitud, #union {
+        display: flex;
+        width: 100%;
+        padding: 6em 0;
+    }
+
+    #serenidad, #gratitud, #union p {
+        text-align: left;
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    #serenidad figure{
+        align-items: left;
+        width: 50%;
+    }
+
+    #serenidad a{
+        padding-left: .75em;
+    }
+
+    #gratitud{
+        flex-direction: row;
+    }
+
+    #gratitud figure{
+        align-items: left;
+        width: 50%;
+    }
+
+    #gratitud a{
+        padding-left: .75em;
+    }
+
+    #union{
+        flex-direction: row-reverse;
+    }
+
+    #union a{
+        text-align: left;
+        padding-left: 2.2em;
+    }
+
+    #union figure{
+        align-items: right;
+        width: 50%;
+
+    }
+
+    .p_pc{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .p_pc p{
+        margin-top: 0;
+    } 
+
+    div figure {
+        width: 85vw;
+        height: calc(85vw * 718 / 1078);
+        max-width: 1078px;
+        max-height: 718px;
+        margin: auto;
+    }
+    
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .podcast h3{
+        font-size: 1.75em;
+    }
+    
+    .podcast{
+        padding: 1.5em 2em;
+    }
+    
+}
